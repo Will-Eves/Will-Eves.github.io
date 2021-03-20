@@ -12,6 +12,11 @@ body {
     background: linear-gradient(45deg, rgb(100, 100, 100) 0%, rgb(0, 0, 0) 100%);
     background-attachment: fixed;
     color:white;
+    overflow-x: hidden;
+}
+
+header {
+    margin-top: 2vh;
 }
 
 footer {
@@ -29,6 +34,16 @@ a {
 
 a:hover{
     text-decoration: underline;
+}
+
+a.header{
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 0.6vh;
+    font-size: 1.5vw;
 }
 
 h1.title {

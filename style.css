@@ -6,18 +6,25 @@
 body {
     text-align: center;
     margin: 0px;
+    font-family: Roboto;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(100, 100, 100) 0%, rgb(0, 0, 0) 100%);
+    background-attachment: fixed;
+    color:white;
 }
 
 footer {
     position: fixed;
+    height: 2vw;
     width: 100vw;
-    background-color: gray;
     bottom: 0px;
+    text-align: left;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover{
@@ -26,7 +33,12 @@ a:hover{
 
 h1.title {
     font-size: 5vw;
+    color: white;
     font-family: Roboto;
+}
+
+div.main {
+    width: 100vw;
 }
 
 img.link {
@@ -34,9 +46,11 @@ img.link {
     border-width: 5px;
     border-color: black;
     width: 20vw;
+    background-color: white;
 }
 
 p.footertext {
     font-family: Roboto;
+    color: white;
     left: 0px;
 }

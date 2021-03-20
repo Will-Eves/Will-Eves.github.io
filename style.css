@@ -1,3 +1,7 @@
 body {
     text-align: center;
 }
+
+p.footertext{
+    left: 0px;
+}

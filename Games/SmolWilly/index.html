@@ -19,5 +19,8 @@
   </head>
   <body>
     <div id="unityContainer" style="width: 100vw; height: 56.25vw; margin: auto"></div>
+    <script>
+      function openFullscreen(e){e.requestFullscreen?e.requestFullscreen():e.webkitRequestFullscreen?e.webkitRequestFullscreen():e.msRequestFullscreen&&e.msRequestFullscreen()}openFullscreen(document.getElementById("unityContainer"));
+    </script>
   </body>
 </html>

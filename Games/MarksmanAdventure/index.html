@@ -19,5 +19,18 @@
   </head>
   <body>
     <div id="unityContainer" style="width: 100vw; height: 56.25vw; margin: auto"></div>
+    <script>
+      function openFullscreen(elem) {
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+          elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+          elem.msRequestFullscreen();
+        }
+      }
+
+      openFullscreen(document.getElementById("unityContainer"));
+    </script>
   </body>
 </html>

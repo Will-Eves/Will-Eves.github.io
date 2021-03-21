@@ -95,25 +95,16 @@ var World = {
     update() {
         Input.update();
 
-        for(let i = -2; i < 3; i++){
-        let r = Render.canvas.width / World.res;
-        let x = Input.mousePos.x - r/2;
-        let y = Input.mousePos.y - r/2;
-        x /= Render.canvas.width;
-        y /= Render.canvas.width;
-        x *= World.res;
-        y *= World.res;
-        x = Math.round(x);
-        y = Math.round(y);
-        World.add(new Sand(x + i, y));
+        if(Math.random() > 0.5){
+            World.add(new Sand(Math.round(Math.random() * 10 - 5 + 10), 0));
+        }else{
+            World.add(new Water(Math.round(Math.random() * 10 - 5 + 30), 0));
         }
-
-        World.add(new Water(30, 0));
 
         Render.clear();
         for(let p of particles){
-            p.update();
             p.draw();
+            p.update();
         }
     },
     add(p) {
@@ -244,8 +235,11 @@ window.onload = function(){
     World.start();
     Input.setup(Render.canvas);
 
-    for(let x = 28; x < 32; x++){
+    for(let x = 24; x < 36; x++){
         for(let y = 13; y < 17; y++){
+            if(x == 26 || x == 30){
+                break
+            }
             World.add(new Wood(x, y));
         }
     }

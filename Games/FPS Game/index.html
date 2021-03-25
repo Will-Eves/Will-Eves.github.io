@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Shooty Shooty Bang Bang</title>
+    <style>
+      body {
+        overflow: hidden;
+      }
+    </style>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" style="width: 800px; height: 450px; background: #000000"></canvas>
+    <canvas id="unity-canvas" style="width: 100vw; height: 56.25vw; background: #000000"></canvas>
     <script src="Build/game.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {

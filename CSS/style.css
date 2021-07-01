@@ -14,7 +14,7 @@ body {
     font-family: RobotoThin;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(45deg, rgb(100, 100, 100) 0%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(45deg, rgb(120, 120, 120) 0%, rgb(50, 50, 50) 100%);
     background-attachment: fixed;
     color:white;
     overflow-x: hidden;
@@ -40,11 +40,13 @@ a {
 }
 
 a.header{
+    font-family: Roboto;
     color: black;
     width: 8vh;
     height: 2.5vh;
     font-size: 2.5vw;
-    margin: 5px;
+    margin: 10px;
+    background-color:none;
 }
 
 a.header:hover{

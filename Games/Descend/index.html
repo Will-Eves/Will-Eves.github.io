@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Deeper and Deeper</title>
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0px;
+      }
+      head {
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body style="text-align: center; margin: 0px;">
+    <canvas id="unity-canvas" style="width: 100vw; height: 56.25vw; background: #231F20"></canvas>
+    <script src="Build/Build.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Build.data.gz",
+        frameworkUrl: "Build/Build.framework.js.gz",
+        codeUrl: "Build/Build.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DevpartyYT",
+        productName: "Deeper and Deeper",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>

@@ -73,7 +73,11 @@ var Render = {
         this.setRes(64);
     },
     setRes(r) {
-        this.res = window.innerWidth / 100 * 32;
+        if(deviceType == "pc"){
+            this.res = window.innerWidth / 100 * 32;
+        }else{
+            this.res = window.innerHeight / 100 * 32;
+        }
         this.res /= r;
     },
     clear() {

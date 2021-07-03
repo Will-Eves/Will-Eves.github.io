@@ -79,3 +79,7 @@ p.footertext {
     left: 0px;
     font-size: 1vw;
 }
+
+p.normal {
+    font-size: 1vw;
+}

@@ -61,8 +61,13 @@ var Input = {
 var Render = {
     createWindow() {
         this.canvas = document.getElementById("sandcanvas");
-        this.canvas.width = window.innerWidth / 100 * 32;
-        this.canvas.height = window.innerWidth / 100 * 32;
+        if(deviceType == "pc"){
+            this.canvas.width = window.innerWidth / 100 * 32;
+            this.canvas.height = window.innerWidth / 100 * 32;
+        }else{
+            this.canvas.width = window.innerHeight / 100 * 32;
+            this.canvas.height = window.innerHeight / 100 * 32;
+        }
         this.ctx = this.canvas.getContext('2d');
         this.res = 0;
         this.setRes(64);
@@ -231,7 +236,7 @@ class Wood extends Particle{
     }
 }
 
-window.onload = function(){
+function loadScript(){
     World.start();
     Input.setup(Render.canvas);
 
@@ -245,4 +250,6 @@ window.onload = function(){
     }
 
     setInterval(World.update, 100);
-};
+}
+
+loadScript();

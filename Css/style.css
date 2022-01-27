@@ -69,6 +69,8 @@ a:hover{
     margin: 0px;
     transform:Translate(-50%, 0%);
     position: absolute;
+    user-select: none;
+    -moz-user-select: none;
 }
 
 .linkbutton{
@@ -76,11 +78,16 @@ a:hover{
     width: 5vw;
     height: 31.2vw;
     margin: 0px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../Res/Arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5vw;
 }
     
 .linkbutton:hover{
-    background-color: grey;
+    background-color: rgba(255, 255, 255, 255);
+    background-image: url("../Res/BlackArrow.png");
 }
 
 .dissolvein{
@@ -90,15 +97,27 @@ a:hover{
 
 @keyframes dissolveinanim{
     from{
-        color: rgba(0, 0, 0, 0);
+        opacity: 0;
     }
     
     to{
-        color: rgba(0, 0, 0, 255);
+        opacity: 1;
+    }
+}
+
+@keyframes dissolveoutanim{
+    from{
+        opacity: 1;
+    }
+    
+    to{
+        opacity: 0;
     }
 }
 
 .showimage{
+    user-select: none;
+    -moz-user-select: none;
     width: 55vw;
     height: 31vw;
     opacity: 1;

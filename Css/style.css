@@ -1,0 +1,109 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial;
+    margin: 0px;
+    background-image: linear-gradient(to bottom right, rgb(220, 220, 220), rgb(100, 100, 100));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
+    position: absolute;
+    width: 100vw;
+    transform: Translate(0vw, 50px);
+}
+
+h1{
+    font-size: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+    text-align: center;
+}
+
+a:hover{
+    animation-duration: 0.5s;
+    animation-name: hoverlink;
+    color: black;
+}
+
+@keyframes hoverlink{
+    from{
+        color: grey;
+    }
+    
+    to{
+        color: black;
+    }
+}
+
+.title{
+    text-align: left;
+    width: 47vw;
+    margin: 0px;
+    position: absolute;
+    transform: Translate(3vw);
+    font-size:35px;
+    color: grey;
+}
+
+.links{
+    text-align: right;
+    width: 47vw;
+    margin: 0px;
+    position: absolute;
+    transform: Translate(50vw, 0vh);
+}
+
+.headerlink{
+    font-size: 35px;
+    margin: 10px;
+}
+
+.imagelink{
+    width: 55vw;
+    margin: 0px;
+    transform:Translate(-50%, 0%);
+    position: absolute;
+}
+
+.linkbutton{
+    position:absolute;
+    width: 5vw;
+    height: 31.2vw;
+    margin: 0px;
+    background-color: white;
+}
+    
+.linkbutton:hover{
+    background-color: grey;
+}
+
+.dissolvein{
+    animation-duration: 2s;
+    animation-name: dissolveinanim;
+}
+
+@keyframes dissolveinanim{
+    from{
+        color: rgba(0, 0, 0, 0);
+    }
+    
+    to{
+        color: rgba(0, 0, 0, 255);
+    }
+}
+
+.showimage{
+    width: 55vw;
+    opacity: 1;
+}
+
+.hideimage{
+    width: 55vw;
+    opacity: 0;
+}

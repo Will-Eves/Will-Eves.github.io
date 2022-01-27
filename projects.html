@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Good Looking Page</title>
+        <link rel="stylesheet" href="Css/style.css">
+        
+        <img style="display:none;" name="image" src="Res/test1.png">
+        <a style="display:none;" name="link" href="https://mcdonalds.com"></a>
+        <img style="display:none;" name="image" src="Res/test2.png">
+        <a style="display:none;" name="link" href="https://mcdonalds.com"></a>
+    </head>
+    <body onload="onload()">
+        <header>
+            <div class="title" id="title">
+                CG Software
+            </div>
+            <div class="links">
+                <a class="headerlink" href="index.html">Home</a>
+                <a class="headerlink" href="about.html">About</a>
+                <a class="headerlink" href="projects.html">Projects</a>
+            </div>
+        </header>
+        <main>
+            <h1>Projects</h1>
+            <div id="projectholder" style="whie-space: nowrap;">
+                <div class="linkbutton" style="transform:Translate(17.5vw, 0vh);" onclick="moveLeft()"></div>
+                
+                <!-- Make sure that all images are 16:9 aspect ration -->
+                <a id="link" href="" class="imagelink">
+                    <img id="image" class="showimage">
+                </a>
+                
+                <div class="linkbutton" style="transform:Translate(77.5vw, 0vh);" onclick="moveRight()"></div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+        
+        <script src="Javascript/projects.js"></script>
+    </body>
+</html>

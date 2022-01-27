@@ -100,10 +100,6 @@ a:hover{
 
 .showimage{
     width: 55vw;
+    height: 31vw;
     opacity: 1;
-}
-
-.hideimage{
-    width: 55vw;
-    opacity: 0;
 }

@@ -8,19 +8,13 @@ var links = [];
 var length;
 
 function moveLeft(){
-    index--;
-    if(index < 0){
-        index = length - 1;
-    }
+    if(index-- < 0) index = length - 1;
     image.src = elements[index].src;
     link.href = links[index].href;
 }
 
 function moveRight(){
-    index++;
-    if(index >= length){
-        index = 0;
-    }
+    if(index++ >= length) index = 0;
     image.src = elements[index].src;
     link.href = links[index].href;
 }

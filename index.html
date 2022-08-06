@@ -4,7 +4,30 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link id="link" rel="stylesheet" href="style.css">
+
+        <script>
+            let link = document.getElementById('link');
+
+            let isMobile = window.innerWidth < window.innerHeight;
+
+            if(isMobile){
+                link.href = 'stylemobile.css';
+            }else{
+                link.href = 'style.css';
+            }
+
+            window.onresize = function(){
+                isMobile = window.innerWidth < window.innerHeight;
+
+                if(isMobile){
+                    link.href = 'stylemobile.css';
+                }else{
+                    link.href = 'style.css';
+                }
+            }
+        </script>
+
         <title>Will Eves</title>
     </head>
     <body class="preload">
@@ -36,7 +59,7 @@
                 </p>
             </div>
 
-            <div id="CodingProjects" class="seperator">
+            <div id="CodingProjects" class="seperator_large">
                 <h1 id="title">Coding Projects</h1>
 
                 <div class="flex-container">

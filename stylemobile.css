@@ -43,18 +43,18 @@ h2{
 }
 
 p.about{
-    font-size: 5vw;
+    font-size: 4.5vw;
 }
 
 .center{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    width: calc(100vw - 100px);
+    width: calc(100vw - 80px);
 }
 
 .center_text{
-    left: calc(50vh - 50px - 50%);
+    left: calc(50vh - 40px - 50%);
 }
 
 .rotate_text{
@@ -84,8 +84,8 @@ p.about{
 .sidebar{
     position: absolute;
 
-    width: 100px;
-    height: 100vh;
+    width: 80px;
+    height: 90vh;
 
     margin: 0px;
 
@@ -100,10 +100,10 @@ p.about{
     margin-left: 7.5px;
     margin-top: 7.5px;
 
-    width: 85px;
-    height: 85px;
+    width: 65px;
+    height: 65px;
 
-    border-radius: 42.5px;
+    border-radius: 32.5px;
 
     background-color: #797979;
 
@@ -113,23 +113,6 @@ p.about{
     background-repeat: no-repeat;
 
     animation: sidebar_image_hover_out 0.2s 1;
-}
-
-.sidebar_image_current_location{
-    margin-left: 7.5px;
-    margin-top: 7.5px;
-
-    width: 85px;
-    height: 85px;
-
-    border-radius: 15px;
-
-    background-color: #b4d273;
-
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-size: 75%;
-    background-repeat: no-repeat;
 }
 
 .sidebar_image:hover{
@@ -142,7 +125,7 @@ p.about{
 
 @keyframes sidebar_image_hover_in{
     0%{
-        border-radius: 42.5px;
+        border-radius: 32.5px;
 
         background-color: #797979;
     }
@@ -160,7 +143,7 @@ p.about{
         background-color: #b4d273;
     }
     100%{
-        border-radius: 42.5px;
+        border-radius: 32.5px;
 
         background-color: #797979;
     }
@@ -184,9 +167,9 @@ p.about{
 .main{
     position: absolute;
 
-    left: 100px;
+    left: 80px;
 
-    width: calc(100vw - 100px);
+    width: calc(100vw - 80px);
     height: 100vh;
 
     text-align: center;

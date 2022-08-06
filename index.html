@@ -1,26 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>CG Software</title>
-        <link rel="stylesheet" href="Css/style.css">
-        <link rel="icon" type="image/x-icon" href="Res/profile.png">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Will Eves</title>
     </head>
-    <body class="coolbackground">
-        <header>
-            <div class="title" id="title">
-                CG Software
+    <body class="preload">
+        <script>
+            setTimeout(function(){
+                document.body.className="";
+            }, 200);
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <a href="#Home"><div class="sidebar_image" style="background-image: url('res/images/House.png');" ondragstart="return false;" ondrop="return false;"></div></a>
+            <a href="#About"><div class="sidebar_image" style="background-image: url('res/images/About.png');" ondragstart="return false;" ondrop="return false;"></div></a>
+            <a href="#CodingProjects"><div class="sidebar_image" style="background-image: url('res/images/Code.png');" ondragstart="return false;" ondrop="return false;"></div></a>
+            <a href="#Games"><div class="sidebar_image" style="background-image: url('res/images/Controller.png');" ondragstart="return false;" ondrop="return false;"></div></a>
+            <a href="#Awards"><div class="sidebar_image" style="background-image: url('res/images/Medal.png');" ondragstart="return false;" ondrop="return false;"></div></a>
+        </div>
+
+        <main class="main">
+            <div id="Home" class="seperator center">
+                <h1 id="rotate_title" class="center_text highlight">Will Eves</h1>
             </div>
-            <div class="links">
-                <a class="headerlink" href="index.html">Home</a>
-                <a class="headerlink" href="about.html">About</a>
-                <a class="headerlink" href="projects.html">Projects</a>
+
+            <div id="About" class="seperator">
+                <h1 id="title">About Me</h1>
+                
+                <p class="about">I am a <span class="highlight">15 year old programmer</span> and <span class="highlight">game developer</span>, and I have been coding since I was <span class="highlight">12</span>.<br>
+                    I know about <span class="highlight">10 coding languages</span>, but my best ones are <span class="highlight">C++</span>, <span class="highlight">C#</span>, and <span class="highlight">JavaScript</span>.<br>
+                    I have made <span class="highlight">hundreds</span> of coding projects as of now, and that number <span class="highlight">keeps growing</span> all the time.
+                </p>
             </div>
-        </header>
-        <main>
-            <h1>Home</h1>
-            <p>Welcome to my site!</p>
+
+            <div id="CodingProjects" class="seperator">
+                <h1 id="title">Coding Projects</h1>
+
+                <div class="flex-container">
+                    <a href="https://devparty.itch.io/dhex" target="_blank" class="project" style="color:greenyellow;background-image: url('https://img.itch.zone/aW1nLzk2NTg4MTAucG5n/original/QtU1%2BT.png');">
+                        <br><br><br>
+
+                        <h2>DHex Editor</h2>
+                        <p>A terminal-based windows hex editor.</p>
+                    </a>
+                    <a href="https://devparty.itch.io/cg-engine-1-million-cubes-demo" target="_blank" class="project" style="color:gainsboro;background-image: url('https://img.itch.zone/aW1hZ2UvMTM1NzY2Ny83OTAzNzkxLnBuZw==/original/nb7VwV.png');">
+                        <br><br><br>
+
+                        <h2>CG Engine</h2>
+                        <p>A c++ based game engine.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div id="Games" class="seperator_large">
+                <h1 id="title">My Games</h1>
+
+                <div class="flex-container">
+                    <a href="https://devparty.itch.io/asteroid" target="_blank" class="project" style="color:white;background-image: url('https://img.itch.zone/aW1nLzg1NzM3ODcucG5n/original/h1haHZ.png');">
+                        <br><br><br>
+
+                        <h2>Asteroid</h2>
+                        <p>A game about protecting the earth from an asteroid.</p>
+                    </a>
+                    <a href="https://devparty.itch.io/unstable" target="_blank" class="project" style="color:rgb(50, 50, 50);background-image: url('https://img.itch.zone/aW1nLzcxMTkwMjIucG5n/original/%2Fo%2BHoY.png');">
+                        <br><br><br>
+
+                        <h2>Unstable</h2>
+                        <p>A game about building a really tall tower.</p>
+                    </a>
+                    <a href="https://devparty.itch.io/anarchic-run" target="_blank" class="project" style="color:rgb(50, 50, 50);background-image: url('https://img.itch.zone/aW1nLzY4NTM0MzEucG5n/original/qltmq7.png');">
+                        <br><br><br>
+
+                        <h2>Anarchic Run</h2>
+                        <p>A game about running and not dying.</p>
+                    </a>
+                    <a href="https://devparty.itch.io/descend" target="_blank" class="project" style="color:rgb(50, 50, 50);background-image: url('https://img.itch.zone/aW1nLzU3Nzg5NTYucG5n/original/JDiwGu.png');">
+                        <br><br><br>
+
+                        <h2>Descend</h2>
+                        <p>A game about getting to the bottom.</p>
+                    </a>
+                    <a href="https://devparty.itch.io/shooter-game" target="_blank" class="project" style="color:rgb(50, 50, 50);background-image: url('https://img.itch.zone/aW1nLzQ4MjI1NDIucG5n/315x250%23c/06Jdyj.png');">
+                        <br><br><br>
+
+                        <h2>Marksman Adventure</h2>
+                        <p>A game about shooting bozos and leveling up.</p>
+                    </a>
+                    <a href="https://devparty.itch.io/city-builder" target="_blank" class="project" style="color:white;background-image: url('https://img.itch.zone/aW1nLzQ4MDU4NjQucG5n/315x250%23c/zivr7y.png');">
+                        <br><br><br>
+
+                        <h2>City Builder</h2>
+                        <p>A game about building a city.</p>
+                    </a>
+                    <a href="https://devparty.itch.io/smol-willy" target="_blank" class="project" style="color:rgb(80, 115, 200);background-image: url('https://img.itch.zone/aW1nLzQ3NjI4NzgucG5n/original/cVozJ%2F.png');">
+                        <br><br><br>
+
+                        <h2>Smol Willy</h2>
+                        <p>A game about a snail that I made as a joke in 8th grade.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div id="Awards" class="seperator">
+                <h1 id="title">My Awards</h1>
+
+                <p class="about">Nothing to see here... Yet.</p>
+            </div>
         </main>
-        <footer>
-        </footer>
+
+        <script>
+            let m_Text = document.getElementById('rotate_title');
+
+            let m_Text_Texts = [
+                'Will Eves',
+                'Programmer',
+                'Game Designer'
+            ];
+
+            let m_Text_Index = 1;
+
+            function Change_m_Text(){
+                setTimeout((function(){
+                    m_Text.classList.add("rotate_text");
+                }), 3500);
+                setTimeout((function(){
+                    m_Text.innerHTML = m_Text_Texts[m_Text_Index];
+                    m_Text_Index++;
+                    if(m_Text_Index == m_Text_Texts.length) m_Text_Index = 0;
+                    Change_m_Text();
+                }), 4000);
+                setTimeout((function(){
+                    m_Text.classList.remove("rotate_text");
+                }), 4500);
+            }
+
+            Change_m_Text();
+        </script>
     </body>
 </html>

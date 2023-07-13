@@ -2,166 +2,34 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link id="link" rel="stylesheet" href="style.css">
 
-        <script>
-            let link = document.getElementById('link');
-
-            let isMobile = window.innerWidth < window.innerHeight;
-
-            if(isMobile){
-                link.href = 'stylemobile.css';
-            }else{
-                link.href = 'style.css';
-            }
-
-            window.onresize = function(){
-                isMobile = window.innerWidth < window.innerHeight;
-
-                if(isMobile){
-                    link.href = 'stylemobile.css';
-                }else{
-                    link.href = 'style.css';
-                }
-            }
-        </script>
-
+        <link rel="stylesheet" type="text/css" href="res/style.css"/>
+        
         <title>Will Eves</title>
     </head>
-    <body class="preload">
-        <script>
-            setTimeout(function(){
-                document.body.className="";
-            }, 200);
-        </script>
+    <body>
+        <canvas id="canvas"></canvas>
 
-        <div id="sidebar" class="sidebar">
-            <a href="#Home"><div class="sidebar_image" style="background-image: url('res/images/House.png');" ondragstart="return false;" ondrop="return false;"></div></a>
-            <a href="#About"><div class="sidebar_image" style="background-image: url('res/images/About.png');" ondragstart="return false;" ondrop="return false;"></div></a>
-            <a href="#CodingProjects"><div class="sidebar_image" style="background-image: url('res/images/Code.png');" ondragstart="return false;" ondrop="return false;"></div></a>
-            <a href="#Games"><div class="sidebar_image" style="background-image: url('res/images/Controller.png');" ondragstart="return false;" ondrop="return false;"></div></a>
-            <a href="#Awards"><div class="sidebar_image" style="background-image: url('res/images/Medal.png');" ondragstart="return false;" ondrop="return false;"></div></a>
+        <h1>Will Eves</h1>
+        <h2 id="title" class="title show">Software <span>E</span>ngineer</h2>
+
+        <div id="Software Engineer" class="appear">
+            <p>I have created all kinds of software, from <strong>Web Apps</strong> to <strong>Game Engines</strong>. I can create software with a variety of languages, such as <strong><span id="lang" class="show">Javascript</span></strong></p>
         </div>
 
-        <main class="main">
-            <div id="Home" class="seperator center">
-                <h1 id="rotate_title" class="center_text highlight">Will Eves</h1>
-            </div><br>
+        <div id="UI/UX Designer" class="appear fade">
+            <p>I create custom <strong>UI/UX</strong> with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Javascript</strong> for web apps and websites such as <strong>this one</strong>.</p>
+        </div>
 
-            <div id="About" class="seperator center">
-                <h1 id="title">About Me</h1>
-                
-                <p class="about">I am a <span class="highlight">15 year old programmer<br></span> and <span class="highlight">game developer</span>,<br> and I have been coding since I was <span class="highlight">12</span>.<br>
-                    I know about <span class="highlight">10 coding languages</span>,<br> but my best ones are <span class="highlight">C++</span>, <span class="highlight">C#</span>, and <span class="highlight">JavaScript</span>.<br>
-                    I have made <span class="highlight">hundreds</span><br> of coding projects as of now,<br> and that number <span class="highlight">keeps growing</span> all the time.
-                </p>
-            </div>
+        <div id="Surfer" class="appear fade">
+            <p>I've been surfing since I was <strong>11</strong>, and I've since fallen in love with all <strong>sports</strong> and <strong>activities</strong> like surfing. Theres no better feeling than being on a board I believe.</p>
+        </div>
 
-            <div id="CodingProjects" class="seperator_large">
-                <h1 id="title">Coding Projects</h1>
+        <div id="Game Designer" class="appear fade">
+            <p>I make all kinds of games, 2D and 3D. I have used many different engines like <strong>Unity</strong> and <strong><a href="https://www.burstjs.com">BurstJS</a></strong> (My own game engine).</p>
+        </div>
 
-                <div class="flex-container">
-                    <a href="https://devparty.itch.io/dhex" target="_blank" class="project" style="color:greenyellow;background-image: url('https://img.itch.zone/aW1nLzk2NTg4MTAucG5n/original/QtU1%2BT.png');">
-                        <br><br><br>
-
-                        <h2>DHex Editor</h2>
-                        <p>A terminal-based windows hex editor.</p>
-                    </a>
-                    <a href="https://devparty.itch.io/cg-engine-1-million-cubes-demo" target="_blank" class="project" style="color:gainsboro;background-image: url('https://img.itch.zone/aW1hZ2UvMTM1NzY2Ny83OTAzNzkxLnBuZw==/original/nb7VwV.png');">
-                        <br><br><br>
-
-                        <h2>CG Engine</h2>
-                        <p>A c++ based game engine.</p>
-                    </a>
-                </div>
-            </div>
-
-            <div id="Games" class="seperator_large">
-                <h1 id="title">My Games</h1>
-
-                <div class="flex-container">
-                    <a href="https://devparty.itch.io/asteroid" target="_blank" class="project" style="color:white;background-image: url('https://img.itch.zone/aW1nLzg1NzM3ODcucG5n/original/h1haHZ.png');">
-                        <br><br><br>
-
-                        <h2>Asteroid</h2>
-                        <p>A game about protecting the earth from an asteroid.</p>
-                    </a>
-                    <a href="https://devparty.itch.io/unstable" target="_blank" class="project" style="color:rgb(50, 50, 50);background-image: url('https://img.itch.zone/aW1nLzcxMTkwMjIucG5n/original/%2Fo%2BHoY.png');">
-                        <br><br><br>
-
-                        <h2>Unstable</h2>
-                        <p>A game about building a really tall tower.</p>
-                    </a>
-                    <a href="https://devparty.itch.io/anarchic-run" target="_blank" class="project" style="color:rgb(50, 50, 50);background-image: url('https://img.itch.zone/aW1nLzY4NTM0MzEucG5n/original/qltmq7.png');">
-                        <br><br><br>
-
-                        <h2>Anarchic Run</h2>
-                        <p>A game about running and not dying.</p>
-                    </a>
-                    <a href="https://devparty.itch.io/descend" target="_blank" class="project" style="color:rgb(50, 50, 50);background-image: url('https://img.itch.zone/aW1nLzU3Nzg5NTYucG5n/original/JDiwGu.png');">
-                        <br><br><br>
-
-                        <h2>Descend</h2>
-                        <p>A game about getting to the bottom.</p>
-                    </a>
-                    <a href="https://devparty.itch.io/shooter-game" target="_blank" class="project" style="color:rgb(50, 50, 50);background-image: url('https://img.itch.zone/aW1nLzQ4MjI1NDIucG5n/315x250%23c/06Jdyj.png');">
-                        <br><br><br>
-
-                        <h2>Marksman Adventure</h2>
-                        <p>A game about shooting bozos and leveling up.</p>
-                    </a>
-                    <a href="https://devparty.itch.io/city-builder" target="_blank" class="project" style="color:white;background-image: url('https://img.itch.zone/aW1nLzQ4MDU4NjQucG5n/315x250%23c/zivr7y.png');">
-                        <br><br><br>
-
-                        <h2>City Builder</h2>
-                        <p>A game about building a city.</p>
-                    </a>
-                    <a href="https://devparty.itch.io/smol-willy" target="_blank" class="project" style="color:rgb(80, 115, 200);background-image: url('https://img.itch.zone/aW1nLzQ3NjI4NzgucG5n/original/cVozJ%2F.png');">
-                        <br><br><br>
-
-                        <h2>Smol Willy</h2>
-                        <p>A game about a snail that I made as a joke in 8th grade.</p>
-                    </a>
-                </div>
-            </div>
-
-            <div id="Awards" class="seperator center">
-                <h1 id="title">My Awards</h1>
-
-                <p class="about">Nothing to see here... Yet.</p>
-            </div>
-        </main>
-
-        <script>
-            let m_Text = document.getElementById('rotate_title');
-
-            let m_Text_Texts = [
-                'William Eves',
-                'Programmer',
-                'Game Designer',
-                'Problem Solver'
-            ];
-
-            let m_Text_Index = 1;
-
-            function Change_m_Text(){
-                setTimeout((function(){
-                    m_Text.classList.add("rotate_text");
-                }), 3500);
-                setTimeout((function(){
-                    m_Text.innerHTML = m_Text_Texts[m_Text_Index];
-                    m_Text_Index++;
-                    if(m_Text_Index == m_Text_Texts.length) m_Text_Index = 0;
-                    Change_m_Text();
-                }), 4000);
-                setTimeout((function(){
-                    m_Text.classList.remove("rotate_text");
-                }), 4500);
-            }
-
-            Change_m_Text();
-        </script>
+        <script src="main.js"></script>
     </body>
 </html>
